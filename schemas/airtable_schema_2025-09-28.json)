@@ -1,0 +1,164 @@
+{
+  "baseId": "tblSUJDxLytGvtTjW",
+  "baseName": "Monthly Bids",
+  "exportedAt": "2025-09-28T18:23:36.429Z",
+  "tables": [
+    {
+      "tableName": "Monthly Bids",
+      "fields": [
+        {
+          "name": "Name",
+          "type": "singleLineText"
+        },
+        {
+          "name": "Date",
+          "type": "date",
+          "format": "M/D/YYYY",
+          "description": "Bid Month Starting date"
+        },
+        {
+          "name": "System Seniority",
+          "type": "number",
+          "precision": 0
+        },
+        {
+          "name": "Category",
+          "type": "number",
+          "precision": 0,
+          "description": "Base, Equipment, Seat Seniority "
+        },
+        {
+          "name": "Projection: CAT# (from Link to VacancyBid)",
+          "type": "multipleLookupValues"
+        },
+        {
+          "name": "Total CAT",
+          "type": "number",
+          "precision": 0,
+          "description": "Total in Category"
+        },
+        {
+          "name": "MinPilots (from Link to VacancyBid)",
+          "type": "multipleLookupValues"
+        },
+        {
+          "name": "Projection: Total CAT (from Link to VacancyBid)",
+          "type": "multipleLookupValues"
+        },
+        {
+          "name": "GLine",
+          "type": "number",
+          "precision": 0,
+          "description": "Last person to get assigned a line"
+        },
+        {
+          "name": "CAT %",
+          "type": "percent",
+          "description": "My relative rank within the Category "
+        },
+        {
+          "name": "LPA",
+          "type": "number",
+          "precision": 1,
+          "description": "Min Pay Guarantee Hours"
+        },
+        {
+          "name": "Bid Group Number awarded",
+          "type": "number",
+          "precision": 0
+        },
+        {
+          "name": "Award Type",
+          "type": "singleSelect",
+          "choices": [
+            "Line",
+            "Reserve",
+            "Training"
+          ],
+          "description": "Line, Reserve, Training"
+        },
+        {
+          "name": "Days Off",
+          "type": "number",
+          "precision": 0,
+          "description": "Awarded days off"
+        },
+        {
+          "name": "Total Awarded Credit",
+          "type": "duration",
+          "format": "h:mm",
+          "description": "Hours of pay awarded"
+        },
+        {
+          "name": "Total Block",
+          "type": "duration",
+          "format": "h:mm",
+          "description": "Total flight time awarded"
+        },
+        {
+          "name": "Total Soft Time",
+          "type": "duration",
+          "format": "h:mm",
+          "description": "Deadheads, other non flying pay"
+        },
+        {
+          "name": "Vacation Credit",
+          "type": "duration",
+          "format": "h:mm"
+        },
+        {
+          "name": "C/I credit",
+          "type": "duration",
+          "format": "h:mm",
+          "description": "Carry in credit from last month"
+        },
+        {
+          "name": "Non Flight Activities",
+          "type": "duration",
+          "format": "h:mm"
+        },
+        {
+          "name": "Deadhead",
+          "type": "duration",
+          "format": "h:mm"
+        },
+        {
+          "name": "International Block",
+          "type": "duration",
+          "format": "h:mm"
+        },
+        {
+          "name": "TAFB",
+          "type": "duration",
+          "format": "h:mm",
+          "description": "Time away from base"
+        },
+        {
+          "name": "Notes",
+          "type": "multilineText"
+        },
+        {
+          "name": "Attachments",
+          "type": "multipleAttachments"
+        },
+        {
+          "name": "Attachment Summary",
+          "type": "aiText",
+          "description": "An AI generated summary of the Attachments field. Upload files to Attachments to generate a summary."
+        },
+        {
+          "name": "Link to VacancyBid",
+          "type": "multipleRecordLinks"
+        },
+        {
+          "name": "Effective Date (from Link to VacancyBid)",
+          "type": "multipleLookupValues"
+        },
+        {
+          "name": "Vacancy Bids",
+          "type": "multipleRecordLinks"
+        }
+      ]
+    }
+  ]
+}
